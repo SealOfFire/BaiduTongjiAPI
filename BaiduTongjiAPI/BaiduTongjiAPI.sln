@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baidu.Tongji.API", "Baidu.Tongji.API\Baidu.Tongji.API.csproj", "{089D0EC4-C0B9-48E5-897D-BFE676E77B70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{864D5609-A382-4B4C-97A7-A6310D4A8E53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{089D0EC4-C0B9-48E5-897D-BFE676E77B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089D0EC4-C0B9-48E5-897D-BFE676E77B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089D0EC4-C0B9-48E5-897D-BFE676E77B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089D0EC4-C0B9-48E5-897D-BFE676E77B70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864D5609-A382-4B4C-97A7-A6310D4A8E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864D5609-A382-4B4C-97A7-A6310D4A8E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864D5609-A382-4B4C-97A7-A6310D4A8E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864D5609-A382-4B4C-97A7-A6310D4A8E53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
