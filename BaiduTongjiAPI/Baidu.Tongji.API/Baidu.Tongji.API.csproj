@@ -56,6 +56,7 @@
     <Compile Include="JSON\Login\Request.cs" />
     <Compile Include="JSON\Report\BodyRequest.cs" />
     <Compile Include="JSON\Report\DataStructure\ReportItemJsonConverter.cs" />
+    <Compile Include="JSON\Report\DataStructure\Visitor.cs" />
     <Compile Include="JSON\Report\GetData\BodyResponse.cs" />
     <Compile Include="JSON\Report\GetData\DataResponse.cs" />
     <Compile Include="JSON\Report\GetData\ReportItem.cs" />
@@ -63,7 +64,7 @@
     <Compile Include="JSON\Report\DataStructure\Gran.cs" />
     <Compile Include="JSON\Report\DataStructure\DateFormatConverter.cs" />
     <Compile Include="JSON\Report\DataStructure\MetricsJsonConverter.cs" />
-    <Compile Include="JSON\Report\DataStructure\GranJsonConverter.cs" />
+    <Compile Include="JSON\Report\DataStructure\EnumJsonConverter.cs" />
     <Compile Include="JSON\Report\HeaderResponse.cs" />
     <Compile Include="JSON\Report\HeaderRequest.cs" />
     <Compile Include="JSON\Report\DataStructure\Metrics.cs" />

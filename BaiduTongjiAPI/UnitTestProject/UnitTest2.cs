@@ -83,5 +83,35 @@ namespace UnitTestProject
             int debug = 0;
             debug++;
         }
+
+        [TestMethod]
+        public void TestMethod6()
+        {
+            Login login = new Login("ctrchina", "82015388@ctrchina.cn", "e798f6e5f99259317259e77b7909e586");
+            Report report = new Report(login);
+            BodyRequest body = new BodyRequest();
+            body.Method = "trend/time/a";
+            body.SiteId = 10960085;
+            // 时间
+            // body.StartDate = DateTime.Now.AddDays(-1);
+            body.StartDate = DateTime.Now.AddDays(-1);
+            body.EndDate = DateTime.Now.AddDays(-1);
+            // 指标
+            body.Metrics.Add(Metrics.PageViewCount);
+            body.Metrics.Add(Metrics.VisitorCount);
+            body.Metrics.Add(Metrics.IPCount);
+            // body.Metrics.Add(Metrics.BounceRatio);
+            // body.Metrics.Add(Metrics.AVGVisitTime);
+            // body.Visitor = "old";
+            // body.Visitor = Visitor.New;
+
+            // 时间粒度
+            body.Gran = Gran.Day;
+            // 查询
+            Baidu.Tongji.API.JSON.Report.GetData.ReportResponse response2 = report.GetData(body);
+
+            int debug = 0;
+            debug++;
+        }
     }
 }

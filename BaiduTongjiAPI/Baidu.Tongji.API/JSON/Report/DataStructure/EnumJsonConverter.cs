@@ -3,12 +3,12 @@ using Newtonsoft.Json;
 
 namespace Baidu.Tongji.API.JSON.Report.DataStructure
 {
-    public class GranJsonConverter : JsonConverter
+    public class EnumJsonConverter : JsonConverter
     {
         public override bool CanConvert(Type objectType)
         {
             // throw new NotImplementedException();
-            return objectType == typeof(Gran);
+            return objectType == typeof(Enum);
         }
 
         public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
@@ -19,7 +19,10 @@ namespace Baidu.Tongji.API.JSON.Report.DataStructure
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
             // throw new NotImplementedException();
-            writer.WriteValue(Enum.GetName(typeof(Gran), (Gran)value).ToLower());
+            if (value is Gran)
+                writer.WriteValue(Enum.GetName(typeof(Gran), value).ToLower());
+            if (value is Visitor)
+                writer.WriteValue(Enum.GetName(typeof(Visitor), value).ToLower());
         }
     }
 }

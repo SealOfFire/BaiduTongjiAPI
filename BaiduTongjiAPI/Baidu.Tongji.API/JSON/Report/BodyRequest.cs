@@ -9,6 +9,8 @@ namespace Baidu.Tongji.API.JSON.Report
     {
         private uint maxResults = 20;
 
+        #region 基本参数
+
         /// <summary>
         /// 站点id
         /// </summary>
@@ -60,7 +62,7 @@ namespace Baidu.Tongji.API.JSON.Report
         /// 时间粒度 day/hour/week/month
         /// </summary>
         [JsonProperty("gran")]
-        [JsonConverter(typeof(GranJsonConverter))]
+        [JsonConverter(typeof(EnumJsonConverter))]
         public Gran Gran { get; set; }
 
         /// <summary>
@@ -81,6 +83,21 @@ namespace Baidu.Tongji.API.JSON.Report
         /// </summary>
         [JsonProperty("max_results")]
         public uint MaxResults { get { return this.maxResults; } set { this.maxResults = value; } }
+
+        #endregion
+
+        #region 筛选参数
+
+        /// <summary>
+        /// 访客过滤
+        /// new：新访客
+        /// old：老访客
+        /// </summary>
+        [JsonProperty("visitor")]
+        [JsonConverter(typeof(EnumJsonConverter))]
+        public Visitor? Visitor { set; get; }
+
+        #endregion
 
         public BodyRequest()
         {

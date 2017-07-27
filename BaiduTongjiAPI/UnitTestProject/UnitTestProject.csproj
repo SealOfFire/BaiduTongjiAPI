@@ -59,6 +59,7 @@
     <None Include="json1.json" />
     <None Include="json3.json" />
     <None Include="json2.json" />
+    <None Include="json4.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
